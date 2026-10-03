@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1f3b;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #11142b;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  background-color: #0a0c1e;
+  color: #ffffff;
+  font-size: 2.2rem;
+  text-align: right;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* CSS Grid for the buttons: 4 equal columns */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  padding: 20px 0;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #2b2f55;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3b407a;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background-color: #f4a300;
+  color: #11142b;
+}
+
+.operator:hover {
+  background-color: #ffb92e;
+}
+
+.clear {
+  background-color: #e0455a;
+}
+
+.clear:hover {
+  background-color: #f05a6f;
+}
+
+/* = button is two rows tall, 0 button is two columns wide */
+.equals {
+  grid-row: span 2;
+  background-color: #2fbf71;
+}
+
+.equals:hover {
+  background-color: #3fd582;
+}
+
+.zero {
+  grid-column: span 2;
+}
