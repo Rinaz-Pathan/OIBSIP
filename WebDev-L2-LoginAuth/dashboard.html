@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="auth.js"></script>
+  <script src="dashboard.js"></script>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <main class="card">
+    <div class="avatar" id="avatar">?</div>
+    <h1 id="welcome">Welcome</h1>
+    <p class="subtitle">You are logged in securely.</p>
+
+    <div class="info">
+      <div class="info-row"><span>Email</span><strong id="user-email"></strong></div>
+      <div class="info-row"><span>Member since</span><strong id="user-since"></strong></div>
+    </div>
+
+    <button id="logout-btn" class="btn-main btn-logout">Logout</button>
+  </main>
+</body>
+</html>
